@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Welcome</title>
+  </head>
+
+  <body>
+    <h1>Welcome to the Website</h1>
+    <br />
+    <a href="about.html">About Us</a><br />
+    <a href="Login.html">Login</a><br />
+    <a href="register.html">Sign Up</a><br />
+
+    <form onsubmit="return validate()"></form>
+Username:<input type="text" id="usermane" name="" value=""/>
+Password:<input id="password" name="" value=""/>
+
+<input type="submit" name="" id="submit" value="submit"/>
+
+<script>
+  function validate()
+  {
+    let.username=document.getElementById('username').value;
+    if (username!="")
+    {
+      return true;
+    }
+    else{alert("null username");
+  return false;}
+  }
+</script>
+
+  </body>
+</html>
+
